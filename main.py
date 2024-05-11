@@ -1,9 +1,10 @@
-def reverse_seq(n):
-    return [i for i in range(1,n+1)][::-1]
+def series_sum(n):
+    res = 0
+    for i in range(n):
+        res += 1 / (1+i*3)
+    return '{:.2f}'.format(res)
 
-def is_uppercase(inp : str):
-    return True if all(i.isupper() for i in inp if i.isalpha()) else False
 
-
-
-print(reverse_seq(5))
+print(series_sum(1), "1.00")
+print(series_sum(2), "1.25")
+print(series_sum(3), "1.39")
