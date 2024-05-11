@@ -5,6 +5,10 @@ class Point:
         print("вызов инициализации")
         self.x = x
         self.y = y
+
+    def __new__(cls, *args, **kwargs):
+        print('щас создадим обьект')
+        return super().__new__(cls)
     def set_coords(self, x, y):
         self.x = x
         self.y = y

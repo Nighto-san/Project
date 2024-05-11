@@ -25,3 +25,42 @@ for строка in range(n):
                 0, 0):
                     print(m[новая_строка][новый_столбец], end=' ')
         print()
+
+
+
+from collections import defaultdict
+
+def dfs(v, visited, graph):
+    visited.add(v)
+    for neighbour in graph[v]:
+        if neighbour not in visited:
+            dfs(neighbour, visited, graph)
+
+
+def solve():
+    n, m = map(int, input().split())
+    graph = defaultdict(list)
+
+
+    for _ in range(m):
+        # добавляем ребра в граф
+        u, v = map(int, input().split())
+        graph[u].append(v)
+        graph[v].append(u)
+        print(graph)
+
+    # множество для хранения посещенных вершин
+    visited = set()
+
+    # запускаем dfs из вершины 1
+    dfs(1, visited, graph)
+
+    # выводим результат
+    print(len(visited))
+    print(' '.join(map(str, sorted(visited))))
+
+
+# запуск функции
+solve()
+
+
