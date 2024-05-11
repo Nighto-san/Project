@@ -8,11 +8,7 @@ def sort_array(source_array):
             c += 1
         else:
             res.append(i)
-
-
-
     return res
-
 
 
 
