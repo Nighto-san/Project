@@ -1,10 +1,8 @@
-def series_sum(n):
-    res = 0
-    for i in range(n):
-        res += 1 / (1+i*3)
-    return '{:.2f}'.format(res)
+
+def expression_matter(a, b, c):
+    return max(a*(a+b), a*b*c, a+b*b, (a+b)*c )
 
 
-print(series_sum(1), "1.00")
-print(series_sum(2), "1.25")
-print(series_sum(3), "1.39")
+print(expression_matter(2, 1, 1), 4)
+
+
