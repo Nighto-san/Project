@@ -1,15 +1,12 @@
-class Ball(object):
-    def __init__(self,t='regular'):
-        self.ball_type = t
-
-ball1 = Ball()
-ball2 = Ball("super")
-print(ball1.ball_type)  #=> "regular"
-print(ball2.ball_type)  #=> "super"
+from loguru import logger
+logger.add('debug.log', level='DEBUG')
 
 
+@logger.catch()
+def pipe_fix(nums):
+    return [i for i in range(nums[0],nums[-1]+1)]
 
-
+print(pipe_fix([1, 2, 3, 5, 6, 8, 9]))
 
 
 
