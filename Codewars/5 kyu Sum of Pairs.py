@@ -1,3 +1,5 @@
+
+
 def sum_pairs(ints, s):
     res = {}
     for digit in ints:
@@ -6,6 +8,7 @@ def sum_pairs(ints, s):
         res[s-digit] = digit
 
     return None
+
 
 
 

@@ -1,9 +1,9 @@
+
 def title_case(string, exceptions=''):
     if exceptions is None:
         exceptions = ''
 
     words = string.split()
-
     title_case_words = [word.capitalize() if word.lower() not in exceptions.lower().split() else word.lower() for word in words]
     if title_case_words:
         title_case_words[0] = title_case_words[0].capitalize()

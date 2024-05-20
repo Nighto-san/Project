@@ -1,3 +1,4 @@
+
 def find_nb(m):
     res = 0
     c = 0
@@ -5,10 +6,11 @@ def find_nb(m):
         c +=1
         res += c**3
 
+
     if res == m:  return c
     else:   return -1
 
-
+ic(find_nb(4183059834009))
 
 print(find_nb(16), -1)
 print(find_nb(4183059834009), 2022)

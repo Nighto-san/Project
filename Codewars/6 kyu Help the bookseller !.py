@@ -1,3 +1,4 @@
+
 def stock_list(catalog, strs):
     if len(strs) == 0 or len(catalog) == 0: return
     res = {}

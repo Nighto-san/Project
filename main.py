@@ -1,12 +1,8 @@
-from loguru import logger
-logger.add('debug.log', level='DEBUG')
-
-
-@logger.catch()
-def pipe_fix(nums):
-    return [i for i in range(nums[0],nums[-1]+1)]
-
-print(pipe_fix([1, 2, 3, 5, 6, 8, 9]))
-
+Напишете самое короткое обращение к селектору второго (выделенного) элемента, чтобы только ему можно было задать свойства.
+<p class="brown yellow blue">Элемент 1</p>
+<p class="red brown green blue">Элемент 2</p>
+<p class="yellow blue green">Элемент 3</p>
+<p class="silver red yellow">Элемент 4</p>
+<p class="brown green red yellow">Элемент 5</p>
 
 

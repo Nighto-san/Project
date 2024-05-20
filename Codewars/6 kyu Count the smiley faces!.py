@@ -1,6 +1,9 @@
+from icecream import ic
+
 def count_smileys(arr):
     s = 0
     for smile in arr:
+
         if smile[0] in ':;' and smile[-1] in ')D':
             if len(smile) == 3:
                 if smile[1] in '-~':
