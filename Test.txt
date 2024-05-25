@@ -1,0 +1,5 @@
+from test import test
+funk_name = 'funk_name'
+args = [,]
+expect = [,]
+test(funk_name, args, expect)
