@@ -3,3 +3,15 @@ funk_name = 'funk_name'
 args = [,]
 expect = [,]
 test(funk_name, args, expect)
+
+import codewars_test as test
+@test.it("encode")
+def basic_test_cases():
+
+import codewars_test as test
+@test.describe("Range extraction")
+
+https://vimeo.com/950362603?share=copy
+
+Password: KAYA<3
+from icecream import ic
